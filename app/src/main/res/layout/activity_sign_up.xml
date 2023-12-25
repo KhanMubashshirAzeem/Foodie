@@ -55,21 +55,24 @@ tools:context=".Activity.SignUpActivity">
         </LinearLayout>
 
         <EditText
-            android:id="@+id/email_login"
+            android:id="@+id/email_sign"
             style="@style/Edittext"
             android:layout_marginTop="32dp"
             android:hint="Email Address"
-            android:inputType="text" />
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="TextFields" />
 
         <EditText
-            android:id="@+id/password_login"
+            android:id="@+id/password_sign"
             style="@style/Edittext"
             android:layout_marginTop="16sp"
-            android:hint="Email Address"
-            android:inputType="textPassword" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:autofillHints="" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/sign_up_btn"
+            android:id="@+id/signUpBtn"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -2,6 +2,7 @@ package com.example.foodie.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -22,17 +23,22 @@ public class IntroActivity extends BaseActivity {
 
     }
 
-    private void setVariable(){
+    private void setVariable() {
         binding.login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (auth.getCurrentUser() != null) {
+                    startActivity(new Intent(IntroActivity.this, MainActivity.class));
+                } else {
+                    startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+                }
             }
         });
 
         binding.signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(IntroActivity.this, SignUpActivity.class));
 
             }
         });

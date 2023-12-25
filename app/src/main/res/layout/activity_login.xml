@@ -65,7 +65,7 @@
                 android:id="@+id/password_login"
                 style="@style/Edittext"
                 android:layout_marginTop="16sp"
-                android:hint="Email Address"
+                android:hint="Password"
                 android:inputType="textPassword" />
 
             <TextView
