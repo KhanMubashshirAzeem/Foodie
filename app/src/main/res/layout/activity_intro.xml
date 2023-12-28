@@ -84,6 +84,7 @@
         android:text="Login"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:onClick="intro_to_login"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -95,6 +96,7 @@
         android:layout_marginStart="24sp"
         android:layout_marginBottom="24sp"
         android:text="SignUp"
+        android:onClick="intro_to_signup"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"

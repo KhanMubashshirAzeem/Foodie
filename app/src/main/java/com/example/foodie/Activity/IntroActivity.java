@@ -46,4 +46,15 @@ public class IntroActivity extends BaseActivity {
 
     }
 
+    public void intro_to_signup(View view) {
+        Intent intent = new Intent(IntroActivity.this, SignUpActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void intro_to_login(View view) {
+        Intent intent = new Intent(IntroActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

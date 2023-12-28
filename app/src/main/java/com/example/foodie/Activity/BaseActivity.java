@@ -8,12 +8,14 @@ import android.os.Bundle;
 import com.example.foodie.R;
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class BaseActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     FirebaseDatabase database;
+    FirebaseUser currentUser;
     public String TAG="khan_Foodie";
     @Override
     protected void onCreate(Bundle savedInstanceState) {

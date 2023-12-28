@@ -25,6 +25,7 @@ public class SignUpActivity extends BaseActivity {
         setContentView(binding.getRoot());
 
         setVariable();
+
     }
 
     private void setVariable() {
@@ -46,6 +47,7 @@ public class SignUpActivity extends BaseActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     Log.i(TAG, "onComplete: User creation successful");
+                                    Toast.makeText(SignUpActivity.this, "Wellcome..", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                                     startActivity(intent);
                                     finish();
