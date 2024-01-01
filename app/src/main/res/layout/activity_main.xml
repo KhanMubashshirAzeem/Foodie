@@ -111,10 +111,11 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:background="@drawable/grey_backgroung"
                     android:orientation="horizontal"
-                    android:padding="12sp">
+                    android:padding="4dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -136,10 +137,11 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:background="@drawable/grey_backgroung"
                     android:orientation="horizontal"
-                    android:padding="12sp">
+                    android:padding="4dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -161,16 +163,18 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:background="@drawable/grey_backgroung"
                     android:orientation="horizontal"
-                    android:padding="12sp">
+                    android:padding="4dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="8dp"
+                        android:padding="4dp"
                         android:src="@drawable/dollar" />
 
                     <Spinner
@@ -212,12 +216,14 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp">
+                android:layout_height="300dp"
+                >
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerView"
+                    android:id="@+id/bestFoodRecyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -229,7 +235,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/recyclerView"
+                    app:layout_constraintStart_toStartOf="@+id/bestFoodRecyclerView"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -239,6 +245,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16sp"
+                android:layout_marginTop="6sp"
                 android:text="Choose Category"
                 android:textColor="@color/blue_grey"
                 android:textSize="22sp"
@@ -253,7 +260,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/categoryRecyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="270dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
