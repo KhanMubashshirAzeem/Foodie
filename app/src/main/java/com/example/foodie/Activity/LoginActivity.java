@@ -24,8 +24,6 @@ public class LoginActivity extends BaseActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setVariable();
-
     }
 
     private void setVariable() {
@@ -52,7 +50,6 @@ public class LoginActivity extends BaseActivity {
 
             }
         });
-
 
 
     }
